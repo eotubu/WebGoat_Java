@@ -528,7 +528,7 @@ public class Encoding extends LessonAdapter
 		try
 		{
 
-			PBEParameterSpec ps = new javax.crypto.spec.PBEParameterSpec( salt, 20000000 );
+			PBEParameterSpec ps = new javax.crypto.spec.PBEParameterSpec( salt, 20 );
 
 			SecretKeyFactory kf = SecretKeyFactory.getInstance( "PBEWithMD5AndDES" );
 
